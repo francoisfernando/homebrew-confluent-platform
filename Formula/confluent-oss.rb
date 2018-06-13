@@ -6,6 +6,7 @@ class ConfluentOss < Formula
   sha256 "32c3aff688d6f24e1ea573efdc4e16a3a5f466f1641b770ae4ba0350e7be583a"
 
   depends_on :java => "1.8"
+
   conflicts_with "kafka", :because => "kafka also ships with identically named Kafka related executables"
 
   def install
